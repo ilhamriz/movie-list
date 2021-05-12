@@ -1,0 +1,20 @@
+footer{
+  min-height: 154px;
+  padding: 34px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 16px;
+}
+.footer-menu p{
+  margin: 0 2rem 8px 0;
+  color: var(--TEXT-1);
+  cursor: pointer;
+}
+.footer-menu p:hover{
+  color: var(--TEXT-0);
+}

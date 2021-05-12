@@ -1,0 +1,57 @@
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+input, input::placeholder{
+  font-family: 'Roboto';
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--TEXT-1);
+}
+
+input{
+  width: 200px;
+  border: none;
+  padding: 8px 0;
+  outline: none;
+  transition: .3s ease-in-out;
+  background-color: transparent;
+  color: white;
+}
+
+input:focus{
+  width: 350px;
+}
+
+form svg{
+  fill: var(--TEXT-1);
+}
+
+.border-bottom{
+  width: 100%;
+  height: 1px;
+  background-color: var(--TEXT-1);
+  position: absolute;
+  bottom: 0;
+  transition: .3s ease-in-out;
+}
+
+input:focus + .border-bottom{  
+  background-color: var(--LINK);
+}
+
+@media (max-width:768px){
+  input, input::placeholder{
+    font-size: 1.5rem;
+  }
+  input:focus{
+    width: 80vw;
+  }
+  form svg{
+    width: 24px;
+    height: 24px;
+  }
+}

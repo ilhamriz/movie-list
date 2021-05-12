@@ -1,0 +1,25 @@
+.movies{
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.movies h2, .search-error{
+  color: rgba(255, 255, 255, .8);
+}
+
+.movies-search{
+  font-style: italic;
+  color: var(--TEXT-0);
+}
+
+.movies section{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-error h2{
+  margin-bottom: 8px;
+}

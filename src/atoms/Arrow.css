@@ -1,0 +1,31 @@
+.arrow{
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.slick-slider:hover .arrow{
+  opacity: 1;
+}
+
+@media (max-width: 768px){
+  .arrow{
+    display: none;
+  }
+}
+
+.arrow-next{
+  right: 0;
+  background: var(--BG-ARROW-RIGHT);
+}
+
+.arrow-prev{
+  left: 0;
+  background: var(--BG-ARROW-LEFT);
+}
